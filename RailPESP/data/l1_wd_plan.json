@@ -1,0 +1,132 @@
+{
+  "id": "lp001",
+  "type": "wd",
+  "description": "working day line plan",
+  "min_headway": 3,
+  "macro_planning_horizon": "day",
+  "micro_planning_horizon" :  "hour",  
+  "start_time": "5:00:00",
+  "end_time": "24:00:00",
+  "hourly_hw": [
+      {
+        "hour": "05:00:00",
+        "T": 20,
+        "starting_time": "05:00:00",
+        "starting_trainID":  1
+      },
+      {
+        "hour": "06:00:00",
+        "T": 15,
+        "starting_time": "06:02:00",
+        "starting_trainID":  7
+      },
+      {
+        "hour": "07:00:00",
+        "T": 10,
+        "starting_time": "07:05:00",
+        "starting_trainID":  15
+      },
+      {
+        "hour": "08:00:00",
+        "T": 5,
+        "starting_time": "08:00:00",
+        "starting_trainID":  15
+      },
+      {
+        "hour": "09:00:00",
+        "T": 5,
+        "starting_time": "09:00:00",
+        "starting_trainID":  27
+      },
+      {
+        "hour": "10:00:00",
+        "T": 5,
+        "starting_time": "10:00:00",
+        "starting_trainID":  53
+      },
+      {
+        "hour": "11:00:00",
+        "T": 7,
+        "starting_time": "11:06:00",
+        "starting_trainID":  81
+      },
+      {
+        "hour": "12:00:00",
+        "T": 7,
+        "starting_time": "12:05:00",
+        "starting_trainID":  115
+      },
+      {
+        "hour": "13:00:00",
+        "T": 9,
+        "starting_time": "13:07:00",
+        "starting_trainID":  141
+      },
+      {
+        "hour": "14:00:00",
+        "T": 5,
+        "starting_time": "14:00:00",
+        "starting_trainID":  171
+      },
+      {
+        "hour": "15:00:00",
+        "T": 5,
+        "starting_time": "15:00:00",
+        "starting_trainID":  201
+      },
+      {
+        "hour": "16:00:00",
+        "T": 4,
+        "starting_time": "16:00:00",
+        "starting_trainID":  231
+      },
+      {
+        "hour": "17:00:00",
+        "T": 4,
+        "starting_time": "17:00:00",
+        "starting_trainID":  261
+      },
+      {
+        "hour": "18:00:00",
+        "T": 6,
+        "starting_time": "18:00:00",
+        "starting_trainID":  291
+      },
+      {
+        "hour": "19:00:00",
+        "T": 8,
+        "starting_time": "19:07:00",
+        "starting_trainID": 321
+      },
+      {
+        "hour": "20:00:00",
+        "T": 10,
+        "starting_time": "20:04:00",
+        "starting_trainID":  351
+      },
+      {
+        "hour": "21:00:00",
+        "T": 10,
+        "starting_time": "21:00:00",
+        "starting_trainID":  381
+      },
+      {
+        "hour": "22:00:00",
+        "T": 12,
+        "starting_time": "22:10:00",
+        "starting_trainID":  411
+      },
+      {
+        "hour": "23:00:00",
+        "T": 15,
+        "starting_time": "23:14:00",
+        "starting_trainID":  431
+      },
+      {
+        "hour": "00:00:00",
+        "T": 30,
+        "starting_time": "00:23:00",
+        "starting_trainID":  451
+      }
+    ]
+}

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<railml>
+  <timeTable version="2.2" scheduleformat ="hh:mm:ss">
+    <trainParts>
+    <trainPart id="1" trainNumber="L1P1T01" processStatus="actual" description="CNL 1242" timetablePeriodRef="d2e69" categoryRef="d2e124">
+        <OcpsTT>
+            <ocpTT ocpRef="Helwan" ocpType="begin">
+                <times scope="scheduled" arrival="05:00:00" departure="05:01:00" departureDay="0" arrivalDay="0" />
+                <sectionTT section="HL-AH" lineRef="l1" distance="1800">
+                 <!-- additionalReserve is the operation time supplement-->
+                     <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+                </sectionTT>
+                <stopDescription commercial="true" stopOnRequest="false">
+                    <stopTimes minimalTime="10S" operationalReserve="5S" additionalReserve="5S" shuntingTime="10S" clearanceTime="5S"></stopTimes>
+                </stopDescription>
+                <statistics>
+                    <statistic>
+                        <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                        <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture" />
+                        <mean arrival="0" departure="0" stopTime="0" departureDelay ="0" arrivalDelay="0"></mean>
+                        <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+                    </statistic>
+                </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="AinHelwan" ocpType="stop">
+            <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+            <sectionTT section="HL-AH" lineRef="l1" distance="880">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="10S" operationalReserve="5S" additionalReserve="5S" shuntingTime="10S" clearanceTime="5S"></stopTimes>
+            </stopDescription>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT> 
+            <ocpTT ocpRef="HelwanUni" ocpType="stop">
+              <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+              <sectionTT section="HL-AH" lineRef="l1" distance="1240">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="10S" operationalReserve="5S" additionalReserve="5S" shuntingTime="10S" clearanceTime="5S"></stopTimes>
+              </stopDescription>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                  <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="WadiHouf" ocpType="stop">
+              <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="10S" operationalReserve="5S" additionalReserve="5S" shuntingTime="10S" clearanceTime="5S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="2180">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="HelwanGardens" ocpType="stop">
+              <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="10S" operationalReserve="5S" additionalReserve="5S" shuntingTime="10S" clearanceTime="5S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1100">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Maasra" ocpType="stop">
+              <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="2700">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="0M" operationalReserve="0M" additionalReserve="0M"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="ToraCement" ocpType="stop">
+              <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+              <sectionTT section="HL-AH" lineRef="l1" distance="1300">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="13M" operationalReserve="2M" additionalReserve="1M"/>
+              </sectionTT>
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                  <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Kozzika" ocpType="stop">
+              <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1400">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Tora" ocpType="stop">
+              <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1200">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Sakanat" ocpType="stop">
+              <times scope="scheduled" arrival="06:50:00" departure="06:51:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="900">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Maadi" ocpType="stop">
+              <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1200">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="MaadiGardens" ocpType="stop">
+              <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+              <sectionTT section="HL-AH" lineRef="l1" distance="1600">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                  <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="DarSalam" ocpType="stop">
+              <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1800">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Zahraa" ocpType="stop">
+              <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1200">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="MarGirges" ocpType="stop">
+              <times scope="scheduled" arrival="06:50:00" departure="06:51:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1300">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="MalakSaleh" ocpType="stop">
+            <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="1400">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Sayda" ocpType="stop">
+                <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+                <sectionTT section="HL-AH" lineRef="l1" distance="800">
+                 <!-- additionalReserve is the operation time supplement-->
+                  <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+                </sectionTT>
+                <stopDescription commercial="true" stopOnRequest="false">
+                    <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+                </stopDescription>
+                <statistics>
+                    <statistic>
+                        <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                        <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                        <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                        <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+                    </statistic>
+                </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Zaghloul" ocpType="stop">
+            <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+             <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+           </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Sadat" ocpType="stop">
+              <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Nasser" ocpType="stop">
+              <times scope="scheduled" arrival="06:50:00" departure="06:51:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="500">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Orabi" ocpType="stop">
+            <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="600">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Shohda" ocpType="stop">
+            <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="2000">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Ghamra" ocpType="stop">
+            <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="1600">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Demerdash" ocpType="stop">
+            <times scope="scheduled" arrival="06:50:00" departure="06:51:30" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Sadr" ocpType="stop">
+            <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="900">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Quba" ocpType="stop">
+            <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+            <sectionTT section="HL-AH" lineRef="l1" distance="600">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Hamamat" ocpType="stop">
+            <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Saray" ocpType="stop">
+            <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+            <ocpTT ocpRef="Zaitoon" ocpType="stop">
+              <times scope="scheduled" arrival="06:50:00" departure="06:51:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Helmia" ocpType="stop">
+              <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Matarya" ocpType="stop">
+              <times scope="scheduled" arrival="06:12:00" departure="06:13:00" departureDay="0" arrivalDay="0" />
+              <sectionTT section="HL-AH" lineRef="l1" distance="1200">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="95% less than 3min delay" percentage="95" value="3M" figure="maxDelayDeparture"  />
+                  <mean arrival="0.0" departure="0.5" stopTime="0.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.0" departureDelay="0.2" ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="AinShams" ocpType="stop">
+              <times scope="scheduled" arrival="06:30:00" departure="06:31:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1000">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="EzbetNakhl" ocpType="stop">
+              <times scope="scheduled" arrival="06:40:00" departure="06:41:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1800">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="Marg" ocpType="stop">
+              <times scope="scheduled" arrival="06:50:00" departure="06:51:30" departureDay="0" arrivalDay="0" />
+              <stopDescription commercial="true" stopOnRequest="false">
+                <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+              </stopDescription>
+
+              <sectionTT section="HL-AH" lineRef="l1" distance="1500">
+                <!-- additionalReserve is the operation time supplement-->
+                <runTimes minimalTime="40S" operationalReserve="10S" additionalReserve="10S"/>
+              </sectionTT>
+              <statistics>
+                <statistic>
+                  <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                  <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                  <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                  <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+                </statistic>
+              </statistics>
+            </ocpTT>
+            <ocpTT ocpRef="NewMarg" ocpType="stop">
+            <times scope="scheduled" arrival="07:00:00" departure="00:00:00" departureDay="0" arrivalDay="0" />
+            <stopDescription commercial="true" stopOnRequest="false">
+              <stopTimes minimalTime="20S" operationalReserve="5S" additionalReserve="5S" shuntingTime="20S" clearanceTime="10S"></stopTimes>
+            </stopDescription>
+
+            <sectionTT section="HL-AH" lineRef="l1" distance="0">
+              <!-- additionalReserve is the operation time supplement-->
+              <runTimes minimalTime="0S" operationalReserve="0S" additionalReserve="0S"/>
+            </sectionTT>
+            <statistics>
+              <statistic>
+                <!--<statisticAnalyses figure options: maxDelayArrival="" maxDelayDeparture="" meanDelayArrival="" meanDelayDeparture="" medianDelayArrival="" medianDelayDeparture="" other=""/>-->
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="medianDelayArrival" />
+                <statisticAnalyses description="85% less than 3min delay" percentage="85" value="3M" figure="maxDelayDeparture" />
+                <mean arrival="3.0" departure="1.0" stopTime="1.5"  ></mean>
+                <standardDeviation arrivalDelay="0.3" departureDelay="0.3"  ></standardDeviation>
+              </statistic>
+            </statistics>
+          </ocpTT>
+        </OcpsTT>
+      </trainPart>
+ </trainParts>
+    </timeTable>
+</railml>

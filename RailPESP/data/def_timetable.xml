@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<railml>
+  <timeTable version="2.2" scheduleformat ="hh:mm:ss" track="newmarg-helwan">
+    <trainParts>
+      <trainPart id="DEF" trainNumber="DEF01" processStatus="actual" description="Timetable template" timetablePeriodRef="NONE" categoryRef="NONE">
+        <OcpsTT>
+          <ocpTT ocpRef="L1P1S01" ocpType="begin">
+            <times scope="published" departure="06:00:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S02" ocpType="stop">
+            <times scope="published" arrival ="06:01:30" departure="06:02:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S03" ocpType="stop">
+            <times scope="published" arrival ="06:03:48" departure="06:04:18" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S04" ocpType="stop">
+            <times scope="published" arrival ="06:11:00" departure="06:12:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S05" ocpType="stop">
+            <times scope="published" arrival ="06:15:00" departure="06:16:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S06" ocpType="stop">
+            <times scope="published" arrival ="06:19:00" departure="06:20:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S07" ocpType="stop">
+            <times scope="published" arrival ="06:23:00" departure="06:24:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S08" ocpType="stop">
+            <times scope="published" arrival ="06:27:00" departure="06:28:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S09" ocpType="stop">
+            <times scope="published" arrival ="06:31:00" departure="06:32:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S10" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S11" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S12" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S13" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S14" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S15" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S16" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S17" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S18" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S19" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S20" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S21" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S22" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S23" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S24" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S25" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S26" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S27" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S28" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S29" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S30" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S31" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S32" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S33" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S34" ocpType="stop">
+            <times scope="published" arrival ="06:35:00" departure="06:36:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+          <ocpTT ocpRef="L1P1S35" ocpType="stop">
+            <times scope="published" arrival ="06:39:00" departureDay="0" arrivalDay="0" />
+          </ocpTT>
+        </OcpsTT>
+      </trainPart>
+    </trainParts>
+  </timeTable>
+</railml>
